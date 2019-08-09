@@ -1,0 +1,51 @@
+{
+  "name": "clickbar/laravel-validate-relative-signature",
+  "description": "Middleware for validating relative signed url requests.",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/clickbar/laravel-validate-relative-signature",
+  "authors": [
+    {
+      "name": "Adrian Hawlitschek",
+      "email": "ah@clickbar.rocks",
+      "role": "Developer"
+    },
+    {
+      "name": "Alexander von Studnitz",
+      "email": "avs@clickbar.rocks",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.3",
+    "illuminate/support": "^5.7"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^3.8",
+    "phpunit/phpunit": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Clickbar\\LaravelPackageTemplate\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Clickbar\\LaravelPackageTemplate\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Clickbar\\LaravelPackageTemplate\\LaravelPackageTemplateServiceProvider"
+      ]
+    }
+  }
+}
